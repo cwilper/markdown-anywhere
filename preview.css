@@ -1,0 +1,2224 @@
+/* --------------------------------------------------------------
+  * Resets default browser CSS styles.
+  * meyerweb.com/eric/thoughts/2007/05/01/reset-reloaded/
+-------------------------------------------------------------- */
+#mda-preview html, #mda-preview body, #mda-preview div, #mda-preview span, #mda-preview applet, #mda-preview object, #mda-preview iframe,
+  #mda-preview h1, #mda-preview h2, #mda-preview h3, #mda-preview h4, #mda-preview h5, #mda-preview h6, #mda-preview p, #mda-preview blockquote, #mda-preview pre,
+  #mda-preview a, #mda-preview abbr, #mda-preview acronym, #mda-preview address, #mda-preview big, #mda-preview cite, #mda-preview code,
+  #mda-preview del, #mda-preview dfn, #mda-preview em, #mda-preview font, #mda-preview img, #mda-preview ins, #mda-preview kbd, #mda-preview q, #mda-preview s, #mda-preview samp,
+  #mda-preview small, #mda-preview strike, #mda-preview strong, #mda-preview tt, #mda-preview var,
+  #mda-preview dl, #mda-preview dt, #mda-preview dd, #mda-preview ol, #mda-preview ul, #mda-preview li,
+  #mda-preview fieldset, #mda-preview form, #mda-preview label, #mda-preview legend,
+  #mda-preview table, #mda-preview caption, #mda-preview tbody, #mda-preview tfoot, #mda-preview thead, #mda-preview tr, #mda-preview th, #mda-preview td {
+  border: 0;
+  font-family: inherit;
+  font-size: 100%;
+  font-style: inherit;
+  font-weight: inherit;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  text-align: inherit;
+  line-height: normal;
+  text-transform: none;
+}
+
+/* @group STANDARD */
+/* --------------------------------------------------------------
+  * Sets the styles for standard HTML elements
+-------------------------------------------------------------- */
+#mda-preview #body {
+  background-color: #D6E1E7;
+  color: #4D4D4D;
+  font-family: sans-serif;
+  font-size: 87.5%; /* 10px */
+  min-width: 970px;
+  vertical-align: baseline;
+}
+
+#mda-preview a:link, #mda-preview a:active, #mda-preview a:visited {
+  color: #4791BC;
+  text-decoration: none;
+}
+
+#mda-preview a:hover {
+  text-decoration: underline;
+}
+
+#mda-preview a img {
+  border: 0;
+}
+
+#mda-preview h1, #mda-preview h2, #mda-preview h3, #mda-preview h4 , #mda-preview h5, #mda-preview h6 {
+  border-bottom: 1px dotted #D6E1E7;
+  color: #005A83;
+  display: block;
+  font-weight: 400;
+  line-height: 1.2em;
+  margin: 10px 0;
+  overflow: hidden;
+}
+#mda-preview h1 *, #mda-preview h2 *, #mda-preview h3 *, #mda-preview h4 *, #mda-preview h5 *, #mda-preview h6 * {
+  line-height: 1.2em;
+}
+/* Font size for Hn is 1.1^(7-n) */
+#mda-preview h1 {
+  font-size: 1.77em;
+}
+
+#mda-preview h2 {
+  font-size: 1.61em;
+}
+
+#mda-preview h3 {
+  font-size: 1.46em;
+}
+
+#mda-preview h4 {
+  font-size: 1.33em;
+}
+
+#mda-preview h5 {
+  font-size: 1.21em;
+}
+
+#mda-preview h6 {
+  font-size: 1.1em;
+}
+
+#mda-preview p {
+  line-height: 1.4em;
+  margin: .5em 0;
+}
+#mda-preview table p:first-child {
+  margin-top: 0;
+}
+#mda-preview table p:last-child {
+  margin-bottom: 0;
+}
+#mda-preview p * {
+  line-height: 1.4em;
+}
+
+#mda-preview ol {
+  margin: 0 0 0 2em;
+}
+
+#mda-preview ul {
+  list-style-type: circle;
+  margin: 0 0 0 2em;
+}
+
+#mda-preview strong {
+  font-weight: 700;
+}
+
+#mda-preview em {
+  font-style: italic;
+}
+
+#mda-preview tt {
+  font-family: monospace;
+}
+
+#mda-preview blockquote {
+  background: #EFEFEF none repeat scroll 0 0;
+  border-left: 2px solid #D6E1E7;
+  display: block;
+  padding: .3em 0 0 1em;
+  quotes: none;
+}
+
+#mda-preview dt {
+  font-style: normal;
+  font-weight: 700;
+  margin: 10px 0 0;
+}
+
+#mda-preview input[type="text"], #mda-preview input[type="password"] {
+  background-color: #FFFFFF ;
+  border: 1px solid #D6E1E7;
+  color: #4D4D4D;
+}
+/* Duplicated because IE6 chokes on the first two selectors. Don't recombine! */
+#mda-preview textarea, #mda-preview select {
+  background-color: #FFFFFF ;
+  border: 1px solid #D6E1E7;
+  color: #4D4D4D;
+}
+#mda-preview textarea {
+  max-width: 100%; /* Prevent resizing beyond the visible area in modern browsers */
+}
+/* IE7 will shrink floated textareas continuously if we set a max-width,
+   since 100% max-width is computed within the border, #mda-preview while the current width includes the border.
+   Disable it since anyway it doesn't support native textarea resizing. */
+#mda-preview *+html textarea {
+  max-width: none;
+}
+
+/* -----------------------Tables-------------------------*/
+#mda-preview table {
+  border-collapse: collapse;
+  vertical-align: middle;
+}
+#mda-preview thead, #mda-preview tbody, #mda-preview tfoot {
+  /* Override default browser styles. */
+  vertical-align: inherit;
+}
+
+#mda-preview caption, #mda-preview th, #mda-preview td {
+  font-size: 1em;
+}
+
+#mda-preview th {
+  background-color: #EFEFEF;
+  font-weight: 700;
+}
+
+#mda-preview table pre {
+  white-space: pre-wrap;
+}
+
+/* @group XWIKI */
+/* --------------------------------------------------------------
+  * XWiki Specific classes
+-------------------------------------------------------------- */
+#mda-preview tt.wikimodel-verbatim {
+  font-family: sans-serif;
+  white-space: pre-wrap;
+}
+/* Reset for verbatim inside monospace */
+#mda-preview tt .wikimodel-verbatim {
+  font-family: monospace;
+}
+
+/* -----------------------Tables-------------------------*/
+#mda-preview .xwikidatatable {
+  width: 99%;
+}
+
+#mda-preview .main table {
+  margin: 1em 1px;
+}
+
+#mda-preview .main th, #mda-preview .main td,
+#mda-preview .wiki-table th, #mda-preview .wiki-table td {
+  border: 1px solid #D6E1E7;
+  padding: 3px 4px;
+}
+
+/* -----------------Non Existing Links-------------------*/
+/* xwiki/2.0 create links */
+#mda-preview span.wikicreatelink a {
+  text-decoration: underline;
+}
+#mda-preview span.wikicreatelink a:after {
+  /* Let's make a nice rounded question mark */
+  content: "?";
+  text-decoration: none;
+  font-size: 80%;
+  font-weight: 900;
+  /* Contrast with the link text */
+  color: #FFFFFF;
+  background-color: #4791BC;
+  /* Leave a bit of distance from the text */
+  margin-left: 0.1em;
+  /* Make it round */
+  padding: 0 0.3em;
+  /* 1.2em is the standard line height */
+  border-radius: 1.2em;
+  /* Raise the box with the standard text depth, #mda-preview so that it sits right on the line */
+  vertical-align: 0.2em;
+}
+/* xwiki/1.0 create links */
+#mda-preview .wikicreatelinktext {
+  text-decoration: underline;
+}
+
+#mda-preview .wikicreatelinkqm {
+  font-size: 80%;
+  font-weight: 900;
+  /* Contrast with the link text */
+  color: #FFFFFF;
+  background-color: #4791BC;
+  /* Leave a bit of distance from the text */
+  margin-left: 0.1em;
+  /* Make it round */
+  padding: 0 0.3em;
+  /* 1.2em is the standard line height */
+  border-radius: 1.2em;
+}
+
+/* ---------------------Lists----------------------------*/
+#mda-preview .main ol, #mda-preview .main ul {
+  line-height: 1.4em;
+  list-style-position: inside;
+  margin: 1em 0 1em 2em;
+}
+#mda-preview .main ol *, #mda-preview .main ul * {
+  line-height: 1.4em;
+}
+#mda-preview .main ol ol, #mda-preview .main ul ul {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+/* ---------------------Headers--------------------------*/
+#mda-preview .edit_section {
+  display: block;
+  height: 24px;
+  line-height: 24px;
+  margin: -19px 0 0;
+  overflow: hidden;
+  position: relative;
+  visibility:hidden;
+}
+
+#mda-preview .edit_section a {
+  background: transparent url("/xwiki/resources/icons/xwiki/edit%2Dsection.png") no-repeat left top;
+  line-height: 999px;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  visibility:visible;
+  width: 20px;
+}
+
+/* -----------------General Elements---------------------*/
+#mda-preview .clearfloats {
+  clear: both;
+  height: 1px;
+  margin: -1px 220px 0;
+  overflow: hidden;
+}
+
+#mda-preview .hidden {
+  display: none !important;
+}
+
+#mda-preview .invisible {
+  visibility: hidden !important;
+}
+
+#mda-preview .loading {
+  background: transparent url("/xwiki/resources/icons/xwiki/spinner.gif") no-repeat center;
+}
+
+#mda-preview .separator {
+  color: #888888;
+}
+
+#mda-preview .column {
+  float: left;
+}
+#mda-preview .full {
+  /* Leave a bit of space for borders. */
+  width: 99.8%;
+}
+#mda-preview .half {
+  /* Rounding errors with 50%, #mda-preview might end up with one more pixel which pushes the column down. */
+  width: 49.9%;
+}
+#mda-preview .third {
+  /* Rounding errors with 33.3%, #mda-preview might end up with one more pixel which pushes the column down. */
+  width: 33.2%;
+}
+
+#mda-preview .avatar_30 {
+  max-width: 30px;
+  max-height: 30px;
+}
+#mda-preview * html .avatar_30 {
+  width: 30px;
+}
+#mda-preview .avatar_50 {
+  max-width: 50px;
+  max-height: 50px;
+}
+#mda-preview * html .avatar_50 {
+  width: 50px;
+}
+#mda-preview .avatar_120 {
+  max-width: 120px;
+  max-height: 120px;
+}
+#mda-preview * html .avatar_120 {
+  width: 120px;
+}
+#mda-preview th.avatar {
+  width: 50px;
+}
+
+/* @group VIEW LAYOUT */
+/* --------------------------------------------------------------
+  * Layout elements for Colibri skin in view mode
+-------------------------------------------------------------- */
+/* ----------------------Header--------------------------*/
+#mda-preview #headerglobal {
+  background: #FFFFFF  ;
+  clear: both;
+  margin-bottom: 16px;
+  width: 100%;
+}
+
+#mda-preview #companylogo a img {
+  float: left;
+}
+
+#mda-preview #globallinks {
+  float: right;
+  padding: 8px 20px;
+  width: 190px;
+}
+
+#mda-preview .globalsearch {
+  text-align: right;
+}
+
+#mda-preview .globalsearch input {
+  display: inline;
+  vertical-align: middle;
+}
+
+#mda-preview .globalsearchinput {
+  min-height: 16px;
+  padding: 0 18px 0 2px;
+  width: 168px;
+}
+
+#mda-preview .globalsearch input.button {
+  background-color: transparent;
+  border: 0;
+  height: 16px;
+  margin: 0 2px 0 -18px;
+  padding: 0;
+  width: 16px;
+}
+
+#mda-preview #headerlanguages {
+  display: block;
+  padding-top: 4px;
+  text-align: right;
+}
+
+#mda-preview #headerlanguages a {
+  background: #005A83;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  color: #FFFFFF;
+  display: inline-block;
+  margin: 2px;
+  padding: 2px 4px;
+}
+
+#mda-preview .language-current {
+  font-weight: 700;
+  background: #D6E1E7 !important;
+  color: #005A83 !important;
+}
+
+#mda-preview .language-default {
+  font-style: italic;
+}
+
+/* ----------------------Content-------------------------*/
+#mda-preview #xwikimaincontainerinner {
+  background: #D6E1E7  ;
+  clear: both;
+  height: 100%;
+  text-align: left;
+}
+
+#mda-preview #contentcontainer {
+  clear: both;
+}
+
+#mda-preview .leftsidecolumns, #mda-preview #contentcolumn {
+  float: left;
+  width: 100%;
+}
+
+#mda-preview .main {
+  margin: 0 200px;
+  padding: 0 25px 25px;
+}
+
+#mda-preview #body.hideleft #contentcolumn .main {
+  margin: 0 200px 0 0;
+}
+
+#mda-preview #body.hideright #contentcolumn .main {
+  margin: 0 0 0 200px;
+}
+
+#mda-preview #body.hidelefthideright #contentcolumn .main {
+  margin: 0;
+}
+
+#mda-preview #body.content #contentcolumn .main {
+  margin: 0 200px;
+}
+
+#mda-preview #mainContentArea, #mda-preview #mainEditArea  {
+  background: #FFFFFF;
+  padding: 10px 25px;
+}
+
+#mda-preview #xwikicontent {
+  clear: both;
+  overflow: auto;
+  width: 100%;
+}
+
+#mda-preview .wiki-code {
+  width: 100%;
+  height: 300px;
+  overflow: auto;
+}
+
+/* -----------------Top Doc Information------------------*/
+#mda-preview #hierarchy {
+  font-size: 90%;
+  padding-top: 15px;
+}
+
+#mda-preview #document-title h1 {
+  font-size: 2.15em;
+  letter-spacing: -1px;
+  margin: 0;
+  padding: 5px 0;
+}
+
+#mda-preview #document-info {
+  color: #4D4D4D;
+  font-size: 90%;
+  padding: 3px 0 1em;
+  text-align: right;
+}
+
+#mda-preview .xdocLastModification {
+  float: left;
+  text-align: left;
+  width: 48%;
+}
+
+/* ---------------Bottom Doc Information------------------*/
+#mda-preview #xdocFooter {
+  background-color: #FFFFFF;
+  border-top: 1px solid #D6E1E7;
+  color: #4D4D4D;
+  font-size: 90%;
+  overflow: auto;
+  padding: 5px 25px 10px;
+  width: auto;
+}
+
+#mda-preview #xdocAuthors {
+  padding: 3px 0;
+  text-align: right;
+}
+
+/* --------------------Doc Extra Tabs--------------------*/
+#mda-preview #docextraanchors {
+  height: 2em;
+}
+
+#mda-preview .active .itemCount, #mda-preview .itemCount {
+  color: #888888;
+}
+
+#mda-preview #docextrapanes {
+  background-color: #FFFFFF;
+  border: none;
+  overflow: auto;
+  padding: 20px 25px 10px;
+}
+
+#mda-preview .xwikiintracontent fieldset {
+  margin: 10px 0 0;
+  padding: 8px 8px 8px 0;
+}
+
+#mda-preview .xwikiintracontent legend {
+  color: #005A83;
+  font: 700 1.2em / 1.4em sans-serif;
+  letter-spacing: .1em;
+}
+
+#mda-preview .noitems {
+  color: #888888;
+  font-size: .9em;
+}
+
+/* -----------------Tabs------------------*/
+#mda-preview ul.xwikitabbar {
+  background-color: #005A83;
+  height: 20px;
+  line-height: 20px;
+  margin: 0;
+  overflow: hidden;
+  padding: 3px 0 0 15px;
+}
+
+#mda-preview .xwikitabbar li {
+  display: inline-block;
+  float: left;
+  height: 20px;
+  line-height: 20px;
+  list-style-type: none;
+  margin-right: 5px;
+}
+
+#mda-preview .xwikitabbar li a, #mda-preview .xwikitabbar li a:visited, #mda-preview .xwikitabbar li a:active{
+  color: #FFFFFF;
+  display: inline-block;
+  font-size: .8em;
+  font-weight: 700;
+  height: 20px;
+  line-height: 20px !important;
+  padding: 0 10px;
+  text-transform: uppercase;
+}
+
+#mda-preview .xwikitabbar li.active a, #mda-preview .xwikitabbar li.active a:active, #mda-preview .xwikitabbar li.active a:visited {
+  background: #FFFFFF;
+  color: #005A83;
+  cursor: default;
+  text-decoration: none;
+}
+
+/* ----------------History----------------*/
+#mda-preview #historyform .currentversion td {
+  background-color: #FFFFDD;
+}
+
+#mda-preview #historyform  th {
+  border: 0;
+  border-bottom: 1px solid #D6E1E7;
+  font-size: .8em;
+  padding: 3px 4px;
+  text-transform: uppercase;
+}
+
+#mda-preview #historyform td{
+  border: 0;
+  border-bottom: 1px solid #D6E1E7;
+  color: #4D4D4D;
+  font-size: .85em;
+  padding: 3px 4px;
+}
+
+#mda-preview div.buttonwrapper {
+  display: inline;
+}
+
+/* ----------------Changes----------------*/
+#mda-preview #changes-info {
+  background: #EFEFEF;
+  color: #4D4D4D;
+  font-size: .9em;
+  text-align: center;
+  position: relative;
+}
+/* Create a theme-able arrow using CSS generated divs */
+/* Special rules for IE6/7 in ie-all.css */
+#mda-preview #changes-info:before, #mda-preview #changes-info:after {
+  content: "";
+  display: block;
+  position: absolute;
+}
+#mda-preview #changes-info:before {
+  top: 3em;
+  right: 50%;
+  width: 2em;
+  height: 2em;
+  background: #FFFFFF;
+}
+#mda-preview #changes-info:after {
+  top: 2em;
+  left: 50%;
+  border-left: 3em solid #FFFFFF;
+  border-top: 2em solid transparent;
+  border-bottom: 2em solid transparent;
+}
+
+#mda-preview #changes-info-boxes {
+  line-height: 1.4em;
+  padding: 1.5em 0 0;
+  /* Ensure that the text stays above the arrow */
+  position: relative;
+  z-index: 1;
+}
+#mda-preview #changes-info-boxes * {
+  line-height: 1.4em;
+}
+#mda-preview #changes-info-box-from {
+  float: left;
+  width: 49%;
+}
+
+#mda-preview #changes-info-box-to {
+  margin-left: 51%;
+}
+/* Special rule for IE7 in ie-all.css */
+
+#mda-preview .changes-info-title {
+  font-size: 1.4em;
+  font-weight: 700;
+}
+
+#mda-preview #changes-info-comment {
+  padding: 1.5em 0 1em;
+}
+
+#mda-preview #changescontent table {
+  margin-bottom: 0;
+  width: 100%;
+}
+
+#mda-preview #changescontent th, #mda-preview #changescontent td {
+  border: 1px solid #D6E1E7;
+  padding: 3px 4px;
+}
+
+#mda-preview #changescontent th {
+  font-size: .85em;
+}
+
+#mda-preview #changescontent  .changes-table-title th {
+  font-size: .9em;
+  text-transform: uppercase;
+}
+
+#mda-preview #changescontent table tr.changes-table-title + tr.changes-table-title th {
+  border-bottom-width: 4px;
+  font-size: .8em;
+}
+
+#mda-preview .diff {
+  overflow: auto;
+  white-space: normal;
+}
+
+#mda-preview .diffaddword {
+  color: #008000;
+}
+
+#mda-preview .diffremoveword {
+  color: #CC3333;
+  text-decoration: line-through;
+}
+
+/* --------------Information--------------*/
+#mda-preview #informationcontent dd {
+  padding: 0 1em 1em;
+}
+
+#mda-preview #informationcontent dt {
+  font-size: .8em;
+  text-transform: uppercase;
+}
+
+/* ----------------------Footer--------------------------*/
+#mda-preview #footerglobal hr {
+  display: none;
+}
+
+#mda-preview #footerglobal {
+  clear: both;
+  color: #4D4D4D;
+  font-size: .7em;
+  margin: 0 225px;
+  padding: 0 0 25px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#mda-preview #body.hideleft #footerglobal{
+  margin: 0 225px 0 0;
+}
+
+#mda-preview #body.hideright #footerglobal {
+  margin: 0 0 0 225px;
+}
+
+/* @group EDIT LAYOUT  */
+/* --------------------------------------------------------------
+  *  Layout elements for Colibri skin in edit mode
+-------------------------------------------------------------- */
+#mda-preview .alleditcontent {
+  margin: 0 25px 25px 20px;
+}
+#mda-preview .editor-wiki .alleditcontent, #mda-preview .editor-wysiwyg .alleditcontent {
+  margin-right: 225px;
+}
+
+#mda-preview .alleditcontent label {
+  display: block;
+  font-size: .85em;
+  font-weight: 700;
+  margin: 10px 0 4px;
+  text-transform: uppercase;
+  color: #888888;
+}
+
+#mda-preview #xwikidoctitleinput, #mda-preview .alleditcontent #parentinput input {
+  width: 99.8%;
+}
+
+#mda-preview .inlinebody #hierarchy, #mda-preview .editbody #hierarchy {
+  display: inline-block;
+  border-right: 1px solid #FFFFFF; /* Fixes an IE8 layout issue */
+}
+
+/* "Edit parent" icon */
+#mda-preview .edit-meta-tools {
+  display: inline-block;
+  vertical-align: middle;
+}
+#mda-preview #mainEditArea:target #hierarchy, #mda-preview #mainEditArea:target .edit-meta-tools,
+#mda-preview #mainContentArea:target #hierarchy, #mda-preview #mainContentArea:target .edit-meta-tools {
+  display: none;
+}
+#mda-preview .edit-meta-tools a {
+  display: block;
+  width: 16px;
+  height: 16px;
+  overflow: hidden;
+  text-indent: -9999px;
+  background: transparent none left top no-repeat;
+  margin-left: 4px;
+}
+#mda-preview .edit-meta-tools a.edit-parent {
+  background-image: url("/xwiki/resources/icons/xwiki/parent_edit.gif");
+}
+#mda-preview .edit-meta-tools a.hide-edit-parent {
+  background-image: url("/xwiki/resources/icons/silk/chart_organisation.gif");
+}
+
+/* Parent editing area */
+#mda-preview #mainEditArea #parentinput, #mda-preview #mainContentArea #parentinput {
+  display: none;
+  background: #EFEFEF;
+  padding: 4px 12px;
+  margin: 0 -12px 8px -12px;
+  font-size: 90%;
+}
+/* Don't combine the following two rules, #mda-preview otherwise IE will fail to recognize either of them */
+#mda-preview #mainEditArea:target #parentinput, #mda-preview #mainContentArea:target #parentinput {
+  display: block;
+}
+#mda-preview #mainEditArea #parentinput.active, #mda-preview #mainContentArea #parentinput.active {
+  display: block;
+}
+#mda-preview #parentinput label {
+  margin: 0;
+}
+#mda-preview #parentinput input {
+  color: #4791BC;
+}
+
+#mda-preview .inlinebody dt {
+  font-size: .85em;
+  text-transform: uppercase;
+}
+
+/* @group EDITORS  */
+/* --------------------------------------------------------------
+  * These classes should be moved in proper editor css files
+-------------------------------------------------------------- */
+/* --------------------Wiki Editor-----------------------*/
+#mda-preview .leftmenu2 { /* TODO rename */
+  background-color: #f0f0ee;
+  padding: 2px;
+}
+
+#mda-preview .leftmenu2 a img {
+  margin: 2px;
+}
+
+#mda-preview #xwikieditcontentinner {
+  border: 1px solid #D6E1E7;
+}
+
+#mda-preview #xwikieditcontent textarea#content {
+  border: 0;
+  padding: 0;
+  width: 100%;
+}
+
+/* --------------Old WYSYWYG Editor----------------------*/
+/* Should be in editor_ui.css */
+#mda-preview iframe.mceEditorIframe, #mda-preview .mceEditor {
+  width: 100% !important;
+}
+
+#mda-preview .mceEditor td {
+  padding:0;
+}
+
+#mda-preview .mceEditorContainer {
+  display: block;
+  height: 100% !important;
+  position: relative;
+  width: 100%;
+}
+
+#mda-preview #body.mceContentBody {
+  background: #FFFFFF;
+  min-width: 100px;
+}
+
+/* ----------------New WYSYWYG Editor--------------------*/
+/* Should be in Wysiwyg.css */
+#mda-preview table.xRichTextEditorTabPanel td {
+  background-color: #FFFFFF;
+}
+
+/* Should be in RichTextArea.css - for table resizing */
+#mda-preview #body.main table {
+  margin: 0;
+}
+
+#mda-preview .wikimodel-emptyline {
+  height: 1em;
+}
+
+#mda-preview .xwikirenderingerror {
+  background: #EFEFEF url("/xwiki/resources/icons/silk/exclamation.gif") no-repeat 8px 50%;
+  border: 1px dotted #D6E1E7;
+  color: #CC3333;
+  display: block;
+  padding: 2px 28px;
+}
+
+#mda-preview .xwikirenderingerrordescription {
+  border: 1px dotted #D6E1E7;
+  border-width: 0 1px 1px;
+  clear: both;
+  display: block;
+  font-size: 90%;
+  margin: 0 0 4px;
+  overflow: auto;
+  padding: 4px 28px;
+}
+
+/* ----------------Objects Editor------------------------*/
+/* Should be in dataeditors.css - added dt, #mda-preview div */
+#mda-preview #body #xwikiobjects dt label, #mda-preview #body #xwikiclassproperties dt label {
+  color: #005A83;
+  font-size: 1.1em;
+  font-weight: 400;
+}
+
+#mda-preview div.xobject-content dt, #mda-preview div.xproperty-content dt{
+  margin: 0;
+}
+
+/* For TagClass */
+#mda-preview div#xwikiobjects input[type="checkbox"], #mda-preview div#xwikiclassproperties input[type="checkbox"] {
+  width: auto;
+}
+
+#mda-preview .xwiki-form-listclass {
+  display: block;
+}
+
+/* @group MENU */
+/* --------------------------------------------------------------
+  * Action Menu elements
+-------------------------------------------------------------- */
+
+/* Menus z-indexes */
+#mda-preview #mainmenu, #mda-preview #mainmenu.submenu, #mda-preview #maineditmenu, #mda-preview #maineditmenu.submenu {
+  z-index: 1000;
+}
+
+#mda-preview #contentmenu, #mda-preview #contentmenu.submenu, #mda-preview #contenteditmenu, #mda-preview #contenteditmenu.submenu {
+  z-index: 999;
+}
+
+/* Main menu */
+#mda-preview #mainmenu {
+  min-width: 970px;
+  overflow: visible;
+}
+
+/* Main edit menu */
+#mda-preview #maineditmenu {
+  color: #FFFFFF;
+  text-align: center;
+}
+
+#mda-preview #maineditmenu a {
+  display: inline;
+  float: none;
+}
+
+#mda-preview #maineditmenu .topmenuentry , #mda-preview #maineditmenu .tmetype {
+  float: none;
+}
+
+/* General */
+#mda-preview .actionmenu {
+  background-color: #005A83;
+  height: 1.6em;
+  min-height: 22px;
+  width: 100%;
+  position: relative;
+  left: 0;
+  top: 0;
+  z-index: 999;
+}
+
+#mda-preview .actionmenu .submenu {
+  background: #005A83;
+  display: block;
+  padding: 5px 5px 5px 10px;
+  position: absolute;
+  width: auto;
+}
+
+#mda-preview .leftmenu {
+  position: absolute;
+  left: 0;
+  padding-left: 25px;
+}
+
+#mda-preview .rightmenu {
+  position: absolute;
+  right: 0;
+  padding-right: 10px;
+}
+
+#mda-preview .topmenuentry {
+  cursor: default;
+  display: block;
+  float: left;
+  height: 1.6em;
+  margin-right: 5px;
+  min-height: 22px;
+}
+
+#mda-preview .rightmenu .topmenuentry {
+  float: right;
+}
+
+#mda-preview .submenu .submenuseparator {
+  border-top: 1px solid #888888;
+  display: block;
+  line-height: 1px;
+  margin: 7px 5px 7px 0;
+}
+
+#mda-preview .actionmenu .hasIcon {
+  background: no-repeat 0px 3px;
+}
+
+#mda-preview .tme-extensible {
+  display: block;
+}
+
+#mda-preview .tmetype{
+  color: #FFFFFF;
+  float: left;
+  font: normal normal 700 0.8em/1.8em sans-serif;
+  padding: 2px 5px 0 20px;
+  text-transform: uppercase;
+}
+
+#mda-preview .menuarrow {
+  color: #FFFFFF;
+  font-size: .8em;
+  line-height: 1.9em;
+  margin-right: 10px;
+}
+
+#mda-preview .topmenuentry .separator {
+  display: inline-block;
+  font-size: .85em;
+  line-height: 1.8em;
+  margin: 0 3px 0 -3px;
+}
+
+/* Links */
+#mda-preview .actionmenu a, #mda-preview .actionmenu a:visited {
+  color: #FFFFFF;
+  display: block;
+  float: left;
+  font: normal normal 700 0.8em/1.8em sans-serif;
+  margin-right: -5px;
+  padding: 2px 10px 0 0;
+  width: auto;
+  white-space: nowrap;
+  text-transform: uppercase;
+}
+
+#mda-preview .actionmenu a:link, #mda-preview .actionmenu a:visited  {
+  cursor: pointer;
+}
+
+#mda-preview .actionmenu .hasIcon a.tme {
+  padding-left: 20px;
+}
+
+#mda-preview .actionmenu .hasIcon a.hastype, #mda-preview .actionmenu a.hastype {
+  padding-left: 0;
+  text-transform: none;
+}
+
+#mda-preview .actionmenu a.hastype strong {
+  font-weight: 400;
+}
+
+#mda-preview .actionmenu a strong {
+  line-height: 1.8em;
+}
+
+#mda-preview .dropdownnolink a.tme:hover {
+  text-decoration: none;
+}
+
+#mda-preview #actionmenu .rightmenu .submenuitem a {
+  text-align: right;
+  width: auto;
+}
+
+#mda-preview .submenuitem a {
+  background: no-repeat 0;
+  height: 16px;
+  line-height: 20px;
+  margin-bottom: 4px;
+}
+
+#mda-preview .actionmenu .submenuitem a, #mda-preview .actionmenu .submenuitem a:link, #mda-preview .actionmenu .submenuitem a:visited, #mda-preview .actionmenu .submenuitem a:active {
+  float: none;
+  font-weight: normal;
+  height: auto;
+  line-height: 1.2em;
+  min-height: 14px; /* Make sure the menu icons fit */
+  padding: 2px 20px 0;
+  text-align: left;
+  text-transform: none;
+}
+
+#mda-preview .actionmenu .tmCreate {
+  background-color: #4D9244;
+  margin-right: 2em;
+  padding-left: 10px;
+  position: relative;
+}
+
+#mda-preview .actionmenu .tmCreate a.tme, #mda-preview .tmCreate .menuarrow  {
+  color: #FFFFFF;
+}
+
+#mda-preview .tmCreate .submenu {
+  margin-left: -15px;
+}
+
+/* Icons */
+#mda-preview .actionmenu .tmCreate {
+  background-image: url("/xwiki/resources/icons/silk/add.gif");
+  background-position:  10px 3px;
+}
+
+#mda-preview .actionmenu .tmWiki {
+  background-image: url("/xwiki/resources/icons/silk/world.gif");
+}
+
+#mda-preview .actionmenu .tmAdminWiki {
+  background-image: url("/xwiki/resources/icons/silk/wrench.gif");
+}
+
+#mda-preview .actionmenu .tmCreateSpace {
+  background-image: url("/xwiki/resources/icons/silk/folder_add.gif");
+}
+
+#mda-preview .actionmenu .tmSpace {
+  background-image: url("/xwiki/resources/icons/silk/folder.gif");
+}
+
+#mda-preview .actionmenu .tmAdminSpace {
+  background-image: url("/xwiki/resources/icons/silk/wrench.gif");
+}
+
+#mda-preview .actionmenu .tmPage {
+  background-image: url("/xwiki/resources/icons/silk/page_white_text.gif");
+}
+
+#mda-preview .actionmenu .tmCreatePage, #mda-preview .actionmenu .tmCreatePageFromOffice {
+  background-image: url("/xwiki/resources/icons/silk/page_white_add.gif");
+}
+
+#mda-preview .actionmenu .tmCreateComment {
+  background-image: url("/xwiki/resources/icons/silk/comment_add.gif");
+}
+
+#mda-preview .actionmenu .tmCreateAttachment{
+  background-image: url("/xwiki/resources/icons/xwiki/attach_add.gif");
+}
+
+#mda-preview .actionmenu .tmEdit {
+  background-image: url("/xwiki/resources/icons/silk/page_white_edit.gif");
+}
+
+#mda-preview .actionmenu .tmEditWiki, #mda-preview .actionmenu .tmViewSource {
+  background-image: url("/xwiki/resources/icons/silk/page_white_code.gif");
+}
+
+#mda-preview .actionmenu .tmEditWysiwyg {
+  background-image: url("/xwiki/resources/icons/silk/page_white_edit.gif");
+}
+
+#mda-preview .actionmenu .tmEditInline {
+  background-image: url("/xwiki/resources/icons/silk/application_form.gif");
+}
+
+#mda-preview .actionmenu .tmEditRights {
+  background-image: url("/xwiki/resources/icons/silk/lock.gif");
+}
+
+#mda-preview .actionmenu .tmEditObject {
+  background-image: url("/xwiki/resources/icons/silk/brick.gif");
+}
+
+#mda-preview .actionmenu .tmEditClass {
+  background-image: url("/xwiki/resources/icons/silk/box.gif");
+}
+
+#mda-preview .actionmenu .tmExportPdf {
+  background-image: url("/xwiki/resources/icons/silk/page_white_acrobat.gif");
+}
+
+#mda-preview .actionmenu .tmExportOdt {
+  background-image: url("/xwiki/resources/icons/xwiki/odf_textdocument.png");
+}
+
+#mda-preview .actionmenu .tmExportRtf {
+  background-image: url("/xwiki/resources/icons/silk/page_white_word.gif");
+}
+
+#mda-preview .actionmenu .tmExportHtml {
+  background-image: url("/xwiki/resources/icons/silk/page_white_world.gif");
+}
+
+#mda-preview .actionmenu .tmExportXar {
+  background-image: url("/xwiki/resources/icons/silk/page_white_compressed.gif");
+}
+
+#mda-preview .actionmenu .tmPrintPreview {
+  background-image: url("/xwiki/resources/icons/silk/page_white_magnify.gif");
+}
+
+#mda-preview .actionmenu .tmActionDelete {
+  background-image: url("/xwiki/resources/icons/silk/cross.gif");
+}
+
+#mda-preview .actionmenu .tmActionRename {
+  background-image: url("/xwiki/resources/icons/silk/textfield_rename.gif");
+}
+
+#mda-preview .actionmenu #tmActionShare {
+  background-image: url("/xwiki/resources/icons/silk/email_go.gif");
+}
+
+#mda-preview .actionmenu .tmActionCopy {
+  background-image: url("/xwiki/resources/icons/silk/page_white_copy.gif");
+}
+
+#mda-preview .actionmenu .tmUser {
+  background-image: url("/xwiki/resources/icons/silk/user.gif");
+}
+
+#mda-preview .actionmenu .tmProfile {
+  background-image: url("/xwiki/resources/icons/silk/vcard.gif");
+}
+
+#mda-preview .actionmenu .tmUserPreferences {
+  background-image: url("/xwiki/resources/icons/silk/wrench.gif");
+}
+
+#mda-preview .actionmenu .tmWatchWiki, #mda-preview .actionmenu .tmWatchSpace, #mda-preview .actionmenu .tmWatchDocument {
+  background-image: url("/xwiki/resources/icons/xwiki/star%2Dgray.png");
+}
+
+#mda-preview .actionmenu .tmWatchlistManager, #mda-preview .actionmenu .tmUnwatchWiki, #mda-preview .actionmenu .tmUnwatchSpace, #mda-preview .actionmenu .tmUnwatchDocument {
+  background-image: url("/xwiki/resources/icons/xwiki/star%2Dyellow.png");
+}
+
+#mda-preview .actionmenu .tmWikiDocumentIndex, #mda-preview .actionmenu .tmSpaceDocumentIndex {
+  background-image: url("/xwiki/resources/icons/silk/book_open.gif");
+}
+#mda-preview .actionmenu .tmUserNetwork {
+  background-image: url("/xwiki/resources/icons/silk/group.gif");
+}
+
+/* @group FORMS */
+/* --------------------------------------------------------------
+  * forms components
+-------------------------------------------------------------- */
+#mda-preview .xform h2, #mda-preview .xform legend {
+  border-bottom: 1px dotted #D6E1E7;
+  color: #005A83;
+  display: block;
+  font-size: 1.2em;
+  font-weight: 900;
+  line-height: 1.2em;
+  overflow: hidden;
+  width: 100%;
+}
+#mda-preview .xform h2 {
+  margin: 2em 0 0;
+}
+/* Legend elements have an intrinsic 8px left padding; compensate that by a negative left margin */
+#mda-preview * html .xform legend {
+  margin-left: -8px;
+}
+#mda-preview *+html .xform legend {
+  margin-left: -8px;
+}
+#mda-preview .xform fieldset h2 {
+  margin: 0;
+}
+
+#mda-preview .xform fieldset {
+  margin: 2em 0;
+}
+#mda-preview .xform fieldset:first-of-type {
+  margin-top: 1em;
+}
+#mda-preview .xform fieldset:last-of-type {
+  margin-bottom: 1em;
+}
+
+#mda-preview .xform input[type="text"], #mda-preview .xform input[type="password"] {
+  width: 99%;
+}
+/* Duplicated because IE6 chokes on the first two selectors. Don't recombine! */
+#mda-preview .xform select, #mda-preview .xform textarea {
+  width: 99%;
+}
+
+#mda-preview .xform dt {
+  margin-top: 1.2em;
+}
+
+#mda-preview .xform dt label, #mda-preview .xformInline label {
+  color: #4D4D4D;
+  font-size: .85em;
+  font-weight: 700;
+  margin-bottom: .3em;
+  text-transform: uppercase;
+}
+
+#mda-preview .xform dt label {
+  display: block;
+}
+
+/* Buttons next to the labels, #mda-preview for example the Customize buttons in Administration->Presentation */
+#mda-preview .xform dt label .buttonwrapper {
+  float: right;
+  margin: 0 1% .3em;
+}
+
+#mda-preview .xform .xRequired {
+  color: #888888;
+  font-size: .9em;
+  font-style: italic;
+  font-weight: normal;
+  margin-left: 1ex;
+  text-transform: none;
+}
+
+#mda-preview .xform .xHint {
+  color: #888888;
+  display: block;
+  font-size: .8em;
+  font-style: normal;
+  font-weight: 400;
+  margin-bottom: .3em;
+}
+
+#mda-preview .xform .xHelp {
+  background: transparent url("/xwiki/resources/icons/silk/information.gif") 0 0 no-repeat;
+  float: right;
+  height: 16px;
+  line-height: 250px; /* Push the text away. */
+  margin-top: -20px; /* Should be 16px + 0.3em */
+  margin-right: 1px; /* Compensate for the border on the input elements */
+  overflow: hidden;
+  text-align: left !important; /* Make sure the text is left-aligned so that the inner box always starts at the top-left corner */
+  width: 16px;
+}
+
+#mda-preview .xform .xErrorMsg {
+  color: #CC3333;
+  display: block;
+  font-size: .8em;
+  font-weight: normal;
+  margin-bottom: .3em;
+}
+
+#mda-preview .xform .xErrorField {
+  border: 1px solid #CC3333;
+}
+
+#mda-preview .xform .buttons {
+  margin: .8em 0;
+}
+
+/* @group BUTTONS */
+/* --------------------------------------------------------------
+  * Button elements different containers
+-------------------------------------------------------------- */
+#mda-preview .buttonwrapper {
+  margin: 5px 5px 0 0;
+}
+#mda-preview .buttonwrapper .button {
+  vertical-align: middle;
+}
+#mda-preview input.button, #mda-preview .buttonwrapper a:visited, #mda-preview .buttonwrapper a:link, #mda-preview .buttonwrapper a:active {
+  background-color: #005A83;
+  background-image: none;
+  border: 1px solid #005A83;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font: normal normal 700 .8em/140% "Helvetica",sans-serif;
+  margin: 0;
+  padding: 2px 3px;
+  text-transform: uppercase;
+}
+
+#mda-preview input.button:hover , #mda-preview .buttonwrapper  a:hover{
+  background-color: #FFFFFF;
+  color: #005A83;
+  text-decoration: none;
+}
+
+#mda-preview .buttonwrapper input.secondary, #mda-preview .buttonwrapper a.secondary, #mda-preview 
+#mda-preview .buttonwrapper a.secondary:link, #mda-preview .buttonwrapper a.secondary:visited,
+#mda-preview .buttonwrapper a.secondary:active /* Needed for IE6 */ {
+  background-color: #FFFFFF;
+  color: #005A83;
+}
+
+/* @group VERTICAL MENU */
+/* General styling */
+#mda-preview .vertical-menu {
+  border: 1px solid #D6E1E7;
+  border-top-width: 0;
+  float: left;
+  font-size: .857em;/* 14px -> 12px */
+  margin: 0 2em 2em 0;
+  width: 15em;
+}
+
+#mda-preview .vertical-menu ul {
+  list-style-type: none;
+  margin: 0;
+}
+#mda-preview .vertical-menu ul ul ul {
+  margin-left: 2em;
+}
+
+#mda-preview .vertical-menu li {
+  border-top: 1px solid #D6E1E7;
+  position: relative;
+}
+
+#mda-preview .vertical-menu span {
+  background: none no-repeat scroll 7px transparent;
+  display: block;
+}
+
+#mda-preview .vertical-menu a {
+  display: block;
+  padding: .5em .5em .5em 30px;
+  text-decoration: none;
+  word-wrap: break-word;
+}
+
+/* Section titles */
+#mda-preview .vertical-menu .group {
+  background-color: #EBF2F3;
+  font-weight: 700;
+  font-variant: small-caps;
+}
+#mda-preview .vertical-menu .group * {
+  color: #005A83;
+}
+
+/* Highlight items when hovering */
+#mda-preview .vertical-menu span:hover {
+  background-color: #FFFFDD;
+}
+#mda-preview .vertical-menu .group:hover {
+  background-color: #005A83;
+}
+#mda-preview .vertical-menu .group:hover * {
+  color: #FFFFFF;
+}
+
+/* Selected item */
+#mda-preview .vertical-menu .current {
+  background-color: #FFFFDD;
+  font-weight: bold;
+}
+#mda-preview .vertical-menu .current-group {
+  background-color: #005A83;
+  color: #FFFFFF;
+}
+#mda-preview .vertical-menu .current-group *, #mda-preview .vertical-menu .current-group *:visited, #mda-preview .vertical-menu .current-group *:active {
+  color: #FFFFFF;
+}
+
+/* Draw an arrow pointing right for the selected item */
+#mda-preview .vertical-menu .current:after, #mda-preview .vertical-menu .current a:after {
+  border-left: 10px solid #FFFFDD;
+  border-top: 1.2em solid transparent;
+  border-bottom: 1.2em solid transparent;
+  content: "";
+  display: block;
+  position: absolute;
+  right: -10px;
+  top: 0%;
+}
+#mda-preview .vertical-menu .current a:after {
+  border-left-color: #D6E1E7;
+  right: -11px;
+}
+#mda-preview .vertical-menu .current-group:after {
+  border-left-color: #005A83 !important;
+}
+
+/* @group PANELS */
+/* --------------------------------------------------------------
+  * Panel elements
+-------------------------------------------------------------- */
+#mda-preview #rightPanels {
+  float: right;
+  margin: 0 0 0 -220px;
+  width: 220px;
+}
+
+#mda-preview #leftPanels {
+  float: left;
+  margin: 0 0 0 -100%;
+  width: 220px;
+}
+
+#mda-preview #editPanels {
+  float: left;
+  margin: 0 0 0 -220px;
+  width: 220px;
+}
+
+#mda-preview .panel {
+  display: block;
+  width: 190px;
+}
+
+#mda-preview #leftPanels .panel {
+  margin: 0 0 10px 20px;
+}
+
+#mda-preview #rightPanels .panel, #mda-preview #editPanels .panel {
+  margin: 0 0 10px 10px;
+}
+
+#mda-preview h1.xwikipaneltitle {
+  background-color: #005A83;
+  border-bottom: 1px dotted #D6E1E7;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-size: .8em;
+  font-weight: 700;
+  letter-spacing: 0;
+  margin: 0;
+  padding: 6px 20px 6px 15px;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+#mda-preview .xwikipanelcontents {
+  background-color: #FFFFFF;
+  color: #4D4D4D;
+  font-size: .85em;
+  line-height: 1.6em;
+  overflow: hidden;
+  padding: 10px 15px;
+}
+#mda-preview .xwikipanelcontents * {
+  line-height: 1.6em;
+}
+#mda-preview .collapsed h1.xwikipaneltitle {
+  background-color: #EBF2F3;
+  border: 0;
+  color: #005A83;
+}
+
+#mda-preview .collapsed .xwikipanelcontents {
+  display: none;
+}
+
+#mda-preview .panelitem {
+  display: block;
+  overflow: hidden;
+  word-wrap: break-word;
+  padding-left: 1em;
+  text-indent: -1em;
+}
+
+#mda-preview .pitemseparator {
+  display: none;
+}
+
+#mda-preview .panel ul {
+  list-style-type: none;
+  margin: 0;
+}
+
+#mda-preview .panel ul ul {
+  margin-left: 2em;
+}
+
+#mda-preview .panel ul li.active {
+  line-height: 1.7em;
+  font-size: 1.2em;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+#mda-preview .panel input, #mda-preview .panel select , #mda-preview .panel dt , #mda-preview .panel table, #mda-preview .padded label{
+  font-size: .95em;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+#mda-preview .panel dd, #mda-preview .panel .padded{
+  padding: 0 0 .5em;
+}
+
+#mda-preview .panel dt, #mda-preview .padded label {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+#mda-preview .DocumentInformation table td {
+  border-top: 1px dotted #D6E1E7;
+}
+
+/* @group COMPONENTS*/
+/* --------------------------------------------------------------
+  * Different classes with specific use
+-------------------------------------------------------------- */
+/* --------------XWiki items types list -----------------*/
+#mda-preview ul.xlist {
+  margin: 0 0 0 .5em !important;
+  overflow: hidden;
+  padding: 0 !important;
+}
+
+#mda-preview ul.xlist li.xunderline {
+  border-bottom: solid 1px #D6E1E7 !important;
+}
+
+#mda-preview ul.xlist li.xhighlight:hover {
+  background-color: #FFFFDD;
+}
+
+#mda-preview ul.xlist li {
+  float: right;
+  height: 100%;
+  list-style-type: none;
+  padding-top: .2em;
+  width: 100% !important;
+}
+
+#mda-preview ul.xlist li.space, #mda-preview ul.xlist li.page, #mda-preview ul.xlist li.comment, #mda-preview ul.xlist li.attachment {
+  background-position: 2px 3px;
+  background-repeat: no-repeat;
+}
+
+#mda-preview ul.xlist li.space {
+  background-image: url("/xwiki/resources/icons/silk/folder.gif");
+}
+
+#mda-preview ul.xlist li.page {
+  background-image: url("/xwiki/resources/icons/silk/page_white_text.gif");
+}
+
+#mda-preview ul.xlist li.comment {
+  background-image: url("/xwiki/resources/icons/silk/comment.gif");
+}
+
+#mda-preview ul.xlist li.attachment {
+  background-image: url("/xwiki/resources/icons/silk/attach.gif");
+  padding-bottom: 0;
+}
+
+#mda-preview ul.xlist li.xitem div.xitemcontainer {
+  text-indent: 1.5em;
+}
+
+#mda-preview ul.xlist li.xitem div.xitemcontainer ul.xlist {
+  text-indent: 0;
+}
+
+#mda-preview .xspacer {
+  display: none;
+}
+
+/* -----------------------Boxes--------------------------*/
+#mda-preview .box {
+  margin: 1em 0;
+  overflow: auto;
+  padding: 0 1px;
+}
+
+#mda-preview .box>*:first-child {
+  margin-top: 0;
+}
+#mda-preview .box>*:last-child {
+  margin-bottom: 0;
+}
+
+#mda-preview .code, #mda-preview .box {
+  background-color: #EFEFEF;
+  border: 1px dotted #D6E1E7;
+}
+
+#mda-preview .code, #mda-preview .code pre, #mda-preview .code *  {
+  font-family: courier, #mda-preview "courier new", #mda-preview monospace;
+  white-space: pre;
+}
+
+/* ----------------------Messages------------------------*/
+#mda-preview .errormessage, #mda-preview .warningmessage, #mda-preview .infomessage, #mda-preview .successmessage, #mda-preview .plainmessage {
+  background: #EFEFEF 6px 8px no-repeat;
+  border: 1px dotted #D6E1E7;
+  margin: 4px 0;
+  overflow: auto;
+  padding: 8px 28px;
+  text-align: justify;
+}
+
+#mda-preview .infomessage {
+  background-image: url("/xwiki/resources/icons/silk/information.gif");
+  color: #336699;
+}
+
+#mda-preview .warningmessage {
+  background-image: url("/xwiki/resources/icons/silk/error.gif");
+  color: #D09000;
+}
+
+#mda-preview .errormessage {
+  background-image: url("/xwiki/resources/icons/silk/exclamation.gif");
+  color: #CC3333;
+}
+
+#mda-preview .successmessage {
+  background-image: url("/xwiki/resources/icons/silk/tick.gif");
+  color: #008000;
+}
+
+#mda-preview .messagetype {
+  display: none;
+}
+
+/* -----------------Message Boxes------------------------*/
+#mda-preview div.floatinginfobox {
+  background-color: #EFEFEF;
+  float: right;
+  margin: .66em 0 1em 1em;
+  padding: 10px;
+}
+
+#mda-preview #mainContentArea .centered {
+  text-align: center;
+}
+
+#mda-preview fieldset.xwikimessage {
+  background-color: #EFEFEF;
+  display: inline-block;
+  margin: 5em auto;
+  padding: 1.5em 2em;
+  text-align: left;
+  width: auto;
+}
+
+#mda-preview fieldset.xwikimessage legend {
+  background-color: #EFEFEF; /* Opera */
+  color: #005A83;
+  display: inline;
+  float: left;
+  font: 700 1.4em sans-serif;
+  letter-spacing: .4em;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  white-space: normal;
+  width: 100%;
+}
+
+#mda-preview table.xwikilogintable td, #mda-preview table.xwikilogintable th {
+  border: 0;
+  padding: 3px 4px;
+}
+
+#mda-preview .xwikimessage table th, #mda-preview .xwikimessage table td {
+  padding: 3px 4px;
+  white-space: nowrap;
+}
+
+#mda-preview .xwikimessage th {
+  border-bottom: 1px solid #D6E1E7;
+  font-size: .85em;
+  text-transform: uppercase;
+}
+
+#mda-preview fieldset.xwikimessage .xwikimessage {
+  clear: both;
+  font-size: 110%;
+  font-weight: 700;
+  text-align: left;
+}
+
+/* ----------------- Accordion -----------------------*/
+
+/* Note that h6 styling is provided in order to ensure backward compatibility after XSCOLIBRI-160 */
+#mda-preview .accordionTabTitleBar h1, #mda-preview .accordionTabTitleBar h6 {
+  display:block;
+  background: #005A83 url("/xwiki/resources/icons/xwiki/accordion.png") no-repeat left;
+  border-bottom: 1px solid #D6E1E7;
+  border-top: 1px solid #FFFFFF;
+  color: #FFFFFF;
+  font: 700 .8em / 1.8em sans-serif;
+  margin: 0;
+  padding: 4px 21px;
+  text-transform: uppercase;
+}
+
+#mda-preview .accordionTabContentBox {
+  background: #EFEFEF;
+  overflow: auto;
+  padding: 5px;
+}
+
+/* -----------------Content Panels-----------------------*/
+
+#mda-preview div.panellayoutcontainer-1col .panellayoutcol {
+  width: 100%;
+}
+
+#mda-preview div.panellayoutcontainer-2col .panellayoutcol {
+  width: 49%;
+}
+
+#mda-preview div.panellayoutcontainer-3col .panellayoutcol {
+  width: 33%;
+}
+
+#mda-preview div.panellayoutcontainer-4col .panellayoutcol {
+  width: 24%;
+}
+
+#mda-preview div.panellayoutcontainer-5col .panellayoutcol {
+  width: 19%;
+}
+
+#mda-preview div.panellayoutcontainer-1col, #mda-preview div.panellayoutcontainer-2col, #mda-preview div.panellayoutcontainer-3col, #mda-preview div.panellayoutcontainer-4col, #mda-preview div.panellayoutcontainer-5col {
+  clear: left;
+  overflow: auto;
+}
+
+#mda-preview .panellayoutcol {
+  float: left;
+  height: 1%;
+}
+
+#mda-preview .panellayoutcol .panel {
+  border: 1px solid #D6E1E7;
+  margin: 0 0 5% 5%;
+  overflow-x: auto;
+  width: 90%;
+}
+
+#mda-preview #xwikicontent .panel ul {
+  list-style-position: inside;
+  margin: 0 5px;
+  padding: 0;
+}
+
+#mda-preview #xwikicontent .panellayoutcol .panel .xwikipanelcontents {
+  background-color: transparent;
+  background-image: none;
+  padding: 10px;
+}
+
+/* --------------------- Icons --------------------------*/
+
+#mda-preview .icon {
+  vertical-align: middle;
+}
+
+/* @group MACROS */
+/* --------------------------------------------------------------
+  * Different classes for specific macro usage
+-------------------------------------------------------------- */
+
+/* ----------------Message Macro-------------------------*/
+#mda-preview span.errormessage, #mda-preview span.warningmessage, #mda-preview span.infomessage, #mda-preview span.plainmessage {
+  background-position: 2px center;
+  overflow: visible;
+  padding: 0 2px 0 22px;
+}
+
+/* -----------------Footnote Macro-----------------------*/
+#mda-preview ol.footnotes {
+  border-top: 1px solid #D6E1E7;
+  font-size: 80%;
+  margin: 10px 0;
+  padding: 1em;
+}
+
+#mda-preview .footnotes li {
+  padding: 0 4px;
+}
+
+#mda-preview .footnoteRef:target, #mda-preview .footnotes *:target {
+  background-color: #FFFFDD;
+  border: 1px dotted;
+}
+
+/* --------------Code Macro syntax 1.0-------------------*/
+#mda-preview .java-keyword, #mda-preview .java-object, #mda-preview .xml-tag, #mda-preview .sql-keyword {
+  color: #00A;
+}
+
+#mda-preview .java-quote {
+  color: #0A0;
+}
+
+/* ------------------Image Macro-------------------------*/
+#mda-preview .imgfloatleft {
+  float: left;
+  margin-right: 1em;
+}
+
+#mda-preview .imgfloatright {
+  float: right;
+  margin-left: 1em;
+}
+
+#mda-preview .imgleft {
+  text-align: left;
+}
+
+#mda-preview .imgcenter {
+  text-align: center;
+}
+
+#mda-preview .imgright {
+  text-align: right;
+}
+
+/* --------------------RSS Macro-------------------------*/
+#mda-preview .rssfeed {
+  background-color: #FFFFFF;
+  border: 1px dotted #D6E1E7;
+  padding: 8px;
+  width: 300px;
+}
+
+#mda-preview .rssfeed .rsschanneltitle {
+  background-color: #FFFFDD;
+  font-weight: 700;
+  margin-bottom: 10px;
+  padding: 5px;
+  text-align: center;
+}
+
+#mda-preview .rsschanneltitle span a img {
+  margin-left:5px;
+}
+
+#mda-preview .rssfeed .rssitem {
+  padding: 5px;
+}
+
+/* @group PROFILE */
+/* --------------------------------------------------------------
+  * These classes should be moved in XWikiUserSheet ssx
+-------------------------------------------------------------- */
+#mda-preview .specialmenu {
+  background-color: #EFEFEF;
+  padding: 3px;
+  text-align: center;
+}
+
+#mda-preview .specialmenu img {
+  vertical-align: middle;
+}
+
+#mda-preview .specialmenu ul {
+  display: inline;
+  margin: 0;
+  padding: 5px 0;
+}
+
+#mda-preview .specialmenu ul li {
+  display: inline;
+  list-style-type: none;
+}
+
+#mda-preview .xwikiuserblog {
+  float: right;
+  padding: 5px;
+}
+
+/* @group ADMINISTRATION */
+/* --------------------------------------------------------------
+  * These classes should be moved in AdminSheet ssx
+-------------------------------------------------------------- */
+/* Overwrites AdminSheet ssx */
+#mda-preview #admin-page-content fieldset p label {
+  text-align: left;
+}
+
+/* Overwrites AdminSheet ssx */
+#mda-preview #contentcolumn #admin-page-header {
+  background-color: #EBF2F3 ;
+}
+
+/* Overwrites AdminSheet ssx */
+#mda-preview #contentcolumn #admin-page-content {
+  background-color: #FFFFFF;
+  padding: 0;
+}
+
+/* Overwrites usersandgroups.css */
+#mda-preview #tdAddNewUserOrGroup .buttonwrapper  a{
+  background-image: none;
+  display: inline;
+  font-size: .8em;
+  height: auto;
+  width: auto;
+}
+
+/* Overwrites usersandgroups.css */
+#mda-preview #tdAddNewUserOrGroup .buttonwrapper  a:hover {
+  color: #005A83;
+}
+
+#mda-preview #addNewMember table {
+  border-collapse: separate;
+}
+
+/* ------------------Panel Wizard------------------------*/
+#mda-preview .panelcontainer {
+  background-color: #D6E1E7;
+  border: 1px solid #D6E1E7;
+  height: 200px;
+  overflow: hidden;
+  padding: 3px;
+}
+
+#mda-preview .panelitemc .xwikibuttonlink {
+  border: 1px solid #D6E1E7;
+  border-top: 0;
+  text-align: center;
+}
+
+#mda-preview .panelitemc .xwikibuttonlink a {
+  padding: 0 5px;
+}
+
+#mda-preview .panelitemc {
+  float: left;
+  height: 256px;
+  margin: 0 4px;
+  width: 210px;
+}
+
+#mda-preview .panelitemc .label {
+  color: #4D4D4D;
+  font-weight: 700;
+  padding: 2px 0;
+  text-align: center;
+}
+
+#mda-preview .placeholder {
+  background-color: #EFEFEF;
+  margin-left: 10px;
+  width: 170px;
+}
+
+#mda-preview #dhtmltooltip {
+  background-color: #FFFFDD;
+  border: 1px solid #D6E1E7;
+  padding: 2px 4px;
+  position: absolute;
+  text-align: justify;
+  z-index: 500;
+}
+
+#mda-preview #panelwizardbuttons {
+  margin: 15px 0 10px;
+}
+
+#mda-preview #PanelListSection, #mda-preview #PageLayoutSection {
+  margin: 15px 0 0;
+}
+
+/* ----------------Page Layout Selection-----------------*/
+#mda-preview .pagelayoutoption {
+  text-align: center;
+  width: 106px;
+}
+
+#mda-preview .pagelayoutoptions  table {
+  margin: 1em 0 0;
+  width: 100%;
+}
+
+#mda-preview .pagelayoutoptions  table td {
+  border: 0;
+}
+
+#mda-preview .pagelayoutoption label {
+  color: #888888;
+}
+
+#mda-preview div.layoutmaquette {
+  height: 100px;
+  padding: 5px;
+  width: 100px;
+}
+
+#mda-preview div.lmcontentcolumn {
+  background-color: #eee;
+  border: 1px solid #aaa;
+  height: 90px;
+}
+
+#mda-preview div.lmleftcolumn, #mda-preview div.lmrightcolumn {
+  background-color: #ddd;
+  border: 1px solid #aaa;
+  float: left;
+  height: 60px;
+  width: 20px;
+}
+
+#mda-preview div.lmrightcolumn {
+  float: right;
+}
+
+#mda-preview #leftcolumn div.lmcontentcolumn {
+  margin-left: 24px;
+}
+
+#mda-preview #rightcolumn div.lmcontentcolumn {
+  margin-right: 24px;
+}
+
+#mda-preview #bothcolumns div.lmcontentcolumn {
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+#mda-preview div.pagelayoutoption:hover .layoutmaquette {
+  background-color: #FFFFDD;
+}
+
+#mda-preview div.pagelayoutoption:hover .lmcontentcolumn {
+  background-color: #ddd;
+}
+
+#mda-preview div.pagelayoutoption:hover .lmleftcolumn,
+  div.pagelayoutoption:hover .lmrightcolumn {
+  background-color: #acf;
+}
+
+#mda-preview #selectedoption .lmcontentcolumn {
+  background-color: #acf;
+}
+
+#mda-preview #selectedoption .lmleftcolumn,
+  #selectedoption .lmrightcolumn {
+  background-color: #369;
+}
+
+#mda-preview #selectedoption label, #mda-preview .pagelayoutoption:hover label {
+  color: #005A83;
+}
+
+/* @group BLOG  */
+/* --------------------------------------------------------------
+  * These classes should be moved in BlogStyle ssx file
+-------------------------------------------------------------- */
+#mda-preview input#tags {
+  width: 99.8%;
+}
+
+/* @group OTHER  */
+/* --------------------------------------------------------------
+  * These classes should be moved in their specific files
+-------------------------------------------------------------- */
+
+/* -------------SmartClient tree overrides---------------*/
+#mda-preview #body .listGrid {
+  border: none;
+}
+#mda-preview #XWEWrapper {
+  /* Fix double scrollbar in IE7&8 */
+  overflow: hidden !important;
+}
+
+/* -----------------------YUI Trees----------------------*/
+#mda-preview .ygtvitem table {
+  border: none !important;
+  margin: 0 !important;
+}
+#mda-preview .ygtvitem td {
+  border: none !important;
+  padding: 0 !important;
+}
+
+#mda-preview {
+  position: absolute;
+  left: 50%;
+  top: 0px;
+  float: right;
+  background: white;
+  width: 50%;
+  height: 100%;
+  overflow: scroll;
+  padding: 10px;
+}
+
+#mda-preview pre {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 3px;
+  font-family: monospace;
+  white-space: pre;
+  background-color: #eee;
+  border: 1px dotted #cccccc;
+}
+
+#mda-preview code {
+  font-family: monospace;
+}
+
+.hljs-subst, .hljs-type, .hljs-built_in, .hljs-builtin-name, .hljs-symbol, .hljs-selector-id, .hljs-selector-attr, .hljs-selector-pseudo, .hljs-template-tag, .hljs-template-variable, .hljs-addition {
+  color: rgb(104, 150, 186);
+}

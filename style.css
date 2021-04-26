@@ -1,0 +1,108 @@
+#mda-fade {
+    justify-content:center;
+    align-items:center;
+    color:white;
+    font-size:2em;
+
+    padding: 10px;
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    z-index:1005;
+    -moz-opacity: 0.8;
+    /*
+    opacity: .8;
+    filter: alpha(opacity=80);
+    */
+}
+
+#mda-wrapper {
+    color: black;
+    display: none;
+    position: absolute;
+    /*
+    top: 5%;
+    left: 5%;
+    right: 5%;
+    bottom: 5%;
+    */
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100vh;
+    padding: 3px;
+/*    border: 3px solid lightgray; */
+    background-color: black;
+    z-index:1002;
+    overflow: auto;
+    font-size: 16px;
+}
+
+#mda-close {
+  font-family: monospace;
+  background: black;
+  color: lightgray;
+  font-size: 30px;
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: 1px solid gray;
+  z-index:1004;
+  cursor: pointer;
+}
+
+#mda-close:hover {
+  color: white;
+}
+
+.mda-panel {
+  color: darkgray;
+  font-size: 1.1em;
+  text-align: center;
+  border-bottom: 1px solid white;
+  padding-bottom: 4px;
+  background: #333;
+}
+
+.mda-close {
+  color: white;
+  float: right;
+  cursor: pointer;
+}
+
+.cm-link {
+  color: lightblue;
+}
+
+.cm-s-vibrant-ink .cm-link {
+    color: lightblue;
+}
+
+.cm-fat-cursor .CodeMirror-cursor {
+    background: lightgray;
+}
+
+.CodeMirror {
+  line-height: 1.1em;
+  font-family: monospace;
+  height: 100%;
+  width: 50%;
+  position: relative;
+  overflow: hidden;
+}
+
+.CodeMirror-code {
+  font-size: 1em;
+}
+
+.CodeMirror-scroll {
+  overflow: auto;
+  height: 100%;
+  outline: none;
+}

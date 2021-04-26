@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Markdown Anywhere Options</title>
+  <style>
+    body: { padding: 10px; }
+
+    .section { padding-bottom: 10px; padding-right: 10px; }
+
+    #save { float: right; margin-bottom: 15px; }
+  </style>
+</head>
+
+<body>
+  <table>
+    <tr>
+      <td>
+        <div class="section">
+          <input type="checkbox" id="useDarkEditorTheme">
+          Use dark editor theme
+        </div>
+      </td>
+      <td>
+        <div class="section">
+          <input type="checkbox" id="useDarkPreviewTheme">
+          Use dark preview theme
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div class="section">
+          <input type="checkbox" id="showLineNumbers">
+          Show line numbers
+        </div>
+      </td>
+      <td>
+        <div class="section">
+          <input type="checkbox" id="highlightCurrentLine">
+          Highlight current line
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div class="section">
+          <input type="checkbox" id="useVim">
+          Use vim keymap
+        </div>
+      </td>
+      <td>
+        <div class="section">
+          <input type="checkbox" id="hidePreview">
+          Hide preview by default
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div class="section">
+          <input type="checkbox" id="showCloseButton">
+          Show close button
+        </div>
+      </td>
+      <td>
+        <div class="section">
+          <nobr>
+          <input type="checkbox" id="autoLaunchXWiki">
+          Auto-launch on XWiki edit pages
+          </nobr>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div class="section"><nobr>
+          Editor font size:
+          <select id="editorFontSize">
+            <option value=".7em">Very small</option>
+            <option value=".85em">Small</option>
+            <option value="1em">Medium</option>
+            <option value="1.15em">Large</option>
+            <option value="1.3em">Very large</option>
+          </select></nobr>
+        </div>
+      </td>
+      <td>
+        <div class="section"><nobr>
+          Preview font size:
+          <select id="previewFontSize">
+            <option value=".7em">Very small</option>
+            <option value=".85em">Small</option>
+            <option value="1em">Medium</option>
+            <option value="1.15em">Large</option>
+            <option value="1.3em">Very large</option>
+          </select></nobr>
+        </div>
+      </td>
+    </tr>
+  </table>
+
+  <div class="section">
+    <button id="save">Save</button>
+  </div>
+
+  <script src="options.js"></script>
+</body>
+</html>
