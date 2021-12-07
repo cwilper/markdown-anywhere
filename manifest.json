@@ -40,6 +40,6 @@
    },
    "permissions": [ "declarativeContent", "storage", "http://*/*", "https://*/*", "unlimitedStorage" ],
    "update_url": "https://clients2.google.com/service/update2/crx",
-   "version": "1.7.0",
+   "version": "1.7.1",
    "web_accessible_resources": [ "icon128.png", "hal.png", "notes.html" ]
 }
