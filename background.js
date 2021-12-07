@@ -2,29 +2,6 @@
 // prerequisite css and scripts into the current page, and launches
 // the editor (or closes the editor if it's open).
 
-/*
-chrome.contextMenus.create(
-    { "title": "Edit as Markdown",
-      "contexts": ["editable"] });
-
-chrome.contextMenus.onClicked.addListener(loadScriptsIntoPageAndToggleEditor);
-*/
-
-chrome.runtime.onInstalled.addListener(function() {
-  chrome.declarativeContent.onPageChanged.removeRules(undefined, function() {
-    chrome.declarativeContent.onPageChanged.addRules([{
-      conditions: [
-        // When a page contains a <textarea> tag...
-        new chrome.declarativeContent.PageStateMatcher({
-          css: ["textarea"]
-        })
-      ],
-      // ... show the page action.
-      actions: [new chrome.declarativeContent.ShowPageAction() ]
-    }]);
-  });
-});
-
 chrome.runtime.onMessage.addListener(
   function(request, sender, sendResponse) {
     if (request === "tryAutoLaunchXWiki") {
